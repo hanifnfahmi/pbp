@@ -417,7 +417,7 @@
                     </div>
                 <?php }?>
 
-                <?php if ( 'addManager' == $id && $sessionRole == 'admin' || $sessionRole == 'manager' ) {?>
+                <?php if ( 'addManager' == $id && ($sessionRole == 'admin' || $sessionRole == 'manager' )) {?>
                     <div class="addManager">
                         <div class="main__form">
                             <div class="main__form--title text-center">Add New Manager</div>
@@ -571,7 +571,7 @@
                     </div>
                 <?php }?>
 
-                <?php if ( 'addPharmacist' == $id && $sessionRole == 'admin' || $sessionRole == 'manager' || $sessionRole == 'pharmacist' ) {?>
+                <?php if ( 'addPharmacist' == $id && ($sessionRole == 'admin' || $sessionRole == 'manager' || $sessionRole == 'pharmacist' )) {?>
                     <div class="addPharmacist">
                         <div class="main__form">
                             <div class="main__form--title text-center">Add New Pharmacist</div>
@@ -725,7 +725,7 @@
                     </div>
                 <?php }?>
 
-                <?php if ( 'addSalesman' == $id && $sessionRole == 'admin' || $sessionRole == 'manager' || $sessionRole == 'pharmacist' ) {?>
+                <?php if ( 'addSalesman' == $id && ($sessionRole == 'admin' || $sessionRole == 'manager' || $sessionRole == 'pharmacist' )) {?>
                     <div class="addSalesman">
                         <div class="main__form">
                             <div class="main__form--title text-center">Add New Salesman</div>
